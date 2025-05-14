@@ -1,2 +1,12 @@
 # T2_C4C257
 TAREA 2
+El código de esta tarea compara el rendimiento de dos algoritmos de ordenamiento, los cuales son Bubble Sort y Selection Sort, con la medición del tiempo que cada algoritmo tarde en ejecutar su función. En primer lugar, se define la función bubbleSort, la cual recibe como argumentos un arreglo y el tamaño de este. Después utiliza dos bucles for anidados, el externo recorre el arreglo varias veces y el interno compara elementos adyacentes e intercambia sus posiciones si el número actual es mayor que el siguiente.
+Se define luego la función selectionSort, que también recibe como parámetros tanto un arreglo como su tamaño. Este utiliza un bucle for externo que recorre el arreglo desde el primer hasta el penúltimo elemento, además usa otro for interno que compara cada elemento con el mínimo actual y si encuentra un elemento más pequeño que el mínimo, entonces actualiza el minimo actual. Después de cada que se recorre el cilco interno, se intercambia el elementos más pequeño con el primer elemento no ordenado.
+En segundo lugar, se define la función main, dentro de la cual se le solicita al usuario el tamaño del arreglo y se crean dos arreglos del mismo tamaño.Luego se utiliza rand() para llenar ambas matrices con números enteros aleatorios.
+Para medir el tiempo que toma ejecutar cada función se usa start = clock() , se llama cada función y luego para el tiempo de medida con end = clock().
+A continuación se reportan ejemplos de la ejecución del código para arreglos de distintos tamaños. Con lo obtenido se puede notar que Selection Sort resulta ser más eficinete. Esto puede deberse a que realiza menos intercambion que Bubble Sort, pues en realidad solo realiza un intercambio por iteración del bucle externo.
+En la primera imagen se puede observar el arreglo y como queda al ser ordenado, sin embargo, esta parte del código que imprime los arreglos se encuentra comentada debido a que los otros tamaños usados eran muy grandes y lo unico que se busca analizar es la comparación entre algoritmos.
+![Captura desde 2025-05-14 15-40-22](https://github.com/user-attachments/assets/21f7d016-395c-45b4-b335-b0f9b5e3edd3)
+![Captura desde 2025-05-14 15-42-48](https://github.com/user-attachments/assets/33988407-3946-4a5f-b583-b02423a7cf12)
+![Captura desde 2025-05-14 15-43-25](https://github.com/user-attachments/assets/d4690ac3-aa1a-4992-a9bf-78a0c4ae6c64)
+![Captura desde 2025-05-14 15-44-14](https://github.com/user-attachments/assets/6e41fb8b-e4b8-4422-adae-7abb2a42a1fe)
